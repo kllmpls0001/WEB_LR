@@ -1,0 +1,140 @@
+/* Улитушкин 191-362 ЛР1 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: padding-box;
+}
+
+ul {
+    list-style: none;
+}
+
+footer a {
+	color: white;
+	padding: 30px;
+    text-decoration: none;
+    background-color: black;
+  	text-align: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 30px;
+    left: 0; 
+	  right: 0; 
+	  margin-left: auto; 
+	  margin-right: auto; 
+	  width: 700px
+}
+
+.menu1 ul {
+    display: flex;
+    background-color: #05ccbb;
+    justify-content:space-around;
+}
+
+.menu1 a {
+    display: block;
+    padding: 1em;
+    background-color: #05ccbb;
+    color: white;
+}
+
+.menu1 a:hover {
+    background-color: black;
+}
+
+.menu2 {
+    width: fit-content;
+}
+
+.menu2 ul {
+    background-color: #05ccbb;
+    padding: 1em;
+}
+
+.menu2 a {
+    display: block;
+    padding: 1em;
+    background-color: #05ccbb;
+    color: black;
+}
+
+.menu2 li {
+    margin-bottom: 1em;
+}
+
+.menu2 li:last-child {
+    margin-bottom: 0em;
+}
+
+.menu2 a:hover {
+    background-color: pink;
+}
+
+
+.menu3 ul {
+    background-color: #05ccbb;
+    position: absolute;
+}
+
+.menu3 ul.head_menu3 {
+    margin-left: 5em;
+}
+
+.menu3 li {
+    float: left;
+    height: 100%;
+    position: relative;
+}
+
+.menu3 a {
+    display: block;
+    background-color: #05ccbb;
+    color: white;
+    padding: 1em;
+    min-width: 5em;
+}
+
+.menu3 a:hover {
+    background-color: black;
+}
+
+.menu3 .submenu1 {
+    display: none;
+}
+
+.menu3 li:hover .submenu1 {
+    display: block;
+}
+
+.menu3 .submenu2 {
+    display: none;
+}
+
+.menu3 li:hover .submenu2 {
+    display: block;
+}
+
+.menu3 .submenu3 {
+    display: none;
+}
+
+.menu3 li:hover .submenu3 {
+    display: block;
+}
+
+div.comm1 {
+    margin: 2em;
+    padding: 2em;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+}
+
+ul.comm2 {
+    position: fixed;
+    right: 0;
+    background-color: #2bb5ff;
+    padding: 1em;
+}
