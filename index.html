@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Lab_3</title>
+	<link rel="stylesheet" type="text/css" href="styles/main.css"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<!-- Compressed CSS -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- foundation-float.min.css: Compressed CSS with legacy Float Grid -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="dist/assets/owl.theme.default.min.css">
+	<! -- Улитушкин 191-362 ЛР3 -->
+</head>
+<body>
+	<header>
+		<div class="head">
+			<h1>Третья лабораторная работа. Использование CSS и JS библиотек.</h1>
+		</div>
+	</header>
+	<main>
+		<section>
+			<h1 class="head">Bootstrap 4 (CSS-Библиотека)</h1>
+			<div class="row col-10 offset-1">
+				<div class="col-lg-4  col-md-3 badge-info">
+					It's a very interesting information, but not. If you want to learn it, please, don't do this. This text is useless, remember this. It's a very interesting information, but not. If you want to learn it, please, don't do this. This text is useless, remember this.
+					<button type="button" class="btn btn-succecc" data-toggle="modal" data-target="#modal-1">
+						Кнопка
+					</button>
+				</div>
+				<div  class="col-lg-4 col-md-6 badge-success">
+					It's a very interesting information, but not. If you want to learn it, please, don't do this. This text is useless, remember this. It's a very interesting information, but not. If you want to learn it, please, don't do this. This text is useless, remember this.
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-2">
+						Кнопка
+					</button>
+				</div>
+				<div  class="col-lg-4  col-md-3 badge-info">
+					It's a very interesting information, but not. If you want to learn it, please, don't do this. This text is useless, remember this. It's a very interesting information, but not. If you want to learn it, please, don't do this. This text is useless, remember this.
+					<button type="button" class="btn btn-succecc" data-toggle="modal" data-target="#modal-3">
+						Кнопка
+					</button>
+				</div>
+			</div>
+			<h4 class="head">Owl Carousel в левой колонке, JQuery в правой (JS-Библиотеки)</h4>
+			<p>Все колонки на широких экранах занимают 1/3 от общего значения (класс col-lg-4). На средних экранах боковые колонки занимают меньшее пространство, чем средняя (классы col-md-3 и col-md-6 для боковых и центральной колонок соответственно).</p>
+
+			<!-- Modal 1 -->
+			<div class="modal" id="modal-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">Owl Carousel</h4>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<div class="owl-carousel owl-theme">
+								<div class="item" style="width:100px"><img class="w-100" src="images/1.jpg" alt="image 1"></div>
+								<div class="item" style="width:100px"><img class="w-100" src="images/2.jpg" alt="image 2"></div>
+								<div class="item" style="width:100px"><img class="w-100" src="images/3.jpg" alt="image 3"></div>
+								<div class="item" style="width:100px"><img class="w-100" src="images/4.jpg" alt="image 4"></div>
+								<div class="item" style="width:100px"><img class="w-100" src="images/5.jpg" alt="image 5"></div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button class="btn btn-danger" type="button" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Modal 2 -->
+			<div class="modal" id="modal-2">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title" id="exampleModalLongTitle">Pop Up</h4>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<img src="images/polytech.png" class="image" style="object-fit: contain;">
+							
+						</div>
+						<div class="modal-footer">
+							<button class="btn btn-danger" type="button" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Modal 3 -->
+			<div class="modal" id="modal-3">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">JQuery</h4>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<div class="text-left">Вращение картинки по нажатию:</div>
+							<div class="row justify-content-center">
+								<img id="rotateble"class="w-25 image" src="images/polytech.png" alt="Moscow Polytech">
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button class="btn btn-danger" type="button" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="dist/owl.carousel.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="js/vendor/jquery.js"></script>
+	<script src="scripts/main.js"></script>
+	<script>
+		$(document).ready(function(){
+		  $(".owl-carousel").owlCarousel();
+		});
+		$('.owl-carousel').owlCarousel({
+			center:true,
+		    margin:10,
+		    loop:true,
+		    autoWidth:true,
+		    autoHeight:true,
+		    items:4,
+		    responsive:{
+		        600:{
+		            items:10
+		        }
+		    }
+		})
+	</script>
+</body>
+</html>
