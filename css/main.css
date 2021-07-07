@@ -46,7 +46,7 @@ option{
 	border:none;
 }
 .button_send:hover{
-	background-color: #000000!important;
+	background-color: grey!important;
 	transition: .4s;
 }
 /*МЕДИА ЗАПРОС ДЛЯ ПЕЧАТИ*/
@@ -57,17 +57,23 @@ option{
    p{
      font-size: 2em;
      text-align: center;
-     color:green;
+     color:black;
    }
    h5{
    	font-size: 5em;
-   	color: red;
+   	color: black;
    }
    tr{
      border: 2px solid black;
      box-shadow: none;
      padding: 10px;font-size: 1.5em;
-     color: green;
+     color: black;
+   }
+   body{
+	   background:transparent;
+   }
+   .container{
+	   page-break-before: always;
    }
 	.row > div:nth-child(2){
 		background-color: green;
