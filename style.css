@@ -71,3 +71,14 @@ h1{
 .item3{
 	grid-column: 1;
 }
+.RAM{
+	display: grid;
+	height: 200px;
+	grid-gap: 1rem;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}	
+.RAM-item{
+	display: grid;
+	place-items: center;
+	background: green;
+}
