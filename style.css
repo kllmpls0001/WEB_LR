@@ -38,3 +38,9 @@ h1{
 .reverse{
 	flex-direction: column-reverse;
 }
+/*flex-flow CSS свойство, которое является сокращением для отдельных свойств flex-direction и flex-wrap*/
+.flex-flow{
+	flex-flow: column;
+	align-items: center;
+	align-self: center;
+}
