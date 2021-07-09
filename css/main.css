@@ -12,6 +12,9 @@ body {
 .text__header{
 	margin: 20px;
 }
+.text__theme{
+	
+}
 .header__top {
 	display: flex;
 	justify-content: space-between;
@@ -19,15 +22,75 @@ body {
 .logo{
 	margin: 12px;
 }
-
 .header__bottom{
 	margin: 20px;
+}
+.columns {
+	
+	display: flex;
+	justify-content: space-between;
+	padding: 0 10%;
+	flex-wrap: wrap;
+}
+.column {
+	border: 2px rgba(0, 128, 255, 0.795) solid;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #9b9999;
+	word-wrap: break-word;
+	width: 30%;
+	min-width: 100px;
+	padding: 1em;
+	cursor: pointer;
+	background-color: yellow;
+}
+.column__header {
+	text-align: center;
+	color: #9b9999;
+}
+.task {
+	background-color: rgba(30, 143, 255, 0.15);
+	margin-top: 1.5em;
+	padding: 1em;
+	color: #077ff8;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	cursor: auto;
+}
+.task__header {
+	text-align: left;
+	color: blue;
+	margin-bottom: 1em;
+	text-decoration: underline;
+}
+.task__buttons {
+	color: #9b9999;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.task__buttons button {
+	box-shadow: 0 0 5px #9b9999;
+	margin-top: 1em;
+	width: 100%;
+	padding: 0.5em;
+	background-color: rgba(0, 128, 255, 0.795);
+	cursor: pointer;
+	color:white;
+	font-weight: 600;
+	height: 50px;
+}
+.task__buttons button:hover {
+	background-color: rgba(101, 177, 253, 0.795);
 }
 .modal{
 	background-color: RGB(0, 158, 142);
 }
+.modal-theme{
+	color: black;
+}
 .footer{
-	border: 4px black;
+    outline: 2px solid #000;
 	background: yellow;
 }
 .text__end{

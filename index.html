@@ -21,7 +21,7 @@
 				<div>
 					<div class="header__bottom">
 						<div class="theme">
-							<label for="switch" class="theme__text">Темная тема</label>
+							<label for="switch" class="text__theme">Темная тема</label>
 							<input type="checkbox" class="theme__checkbox" id="switch" name="theme">
 						</div>
 					</div>
@@ -29,15 +29,51 @@
 			</div>
 		</header>
 		<main>
-			<div class="col-lg-4 badge-info">
+			<div class="col-lg-12 badge-info">
 				<p>Добавить задачу:</p>
-				<button type="button" class="btn btn-succecc" data-toggle="modal" data-target="#modal-1">
+				<button type="button" class="btn btn-succecc mb-5" data-toggle="modal" data-target="#modal-1">
 					Новая задача
 				</button>
 			</div>
-			<div>
+			<div class="columns badge-info pb-5">
+				<div class="column">
+					<h2 class="column__header">low</h2>
+					<div class="task">
+						<div class="task__wrapper">
+							<h3 class="task__header">Задача №3</h3>
+							<p class="task__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, iste quam? Fugit repellendus quidem explicabo sint iure quia optio doloremque!</p>
+						</div>
+						<div class="task__buttons">
+							<button class="task__button">Удалить</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="column">
+					<h2 class="column__header">medium</h2>
+					<div class="task">
+						<div class="task__wrapper">
+							<h3 class="task__header">Задача №2</h3>
+							<p class="task__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, iste quam? Fugit repellendus quidem explicabo sint iure quia optio doloremque!</p>
+						</div>
+						<div class="task__buttons">
+							<button class="task__button">Удалить</button>
+						</div>
+					</div>
+				</div>
 				
-			</div>
+				<div class="column">
+					<h2 class="column__header">high</h2>
+					<div class="task">
+						<div class="task__wrapper">
+							<h3 class="task__header">Задача №1</h3>
+							<p class="task__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, iste quam? Fugit repellendus quidem explicabo sint iure quia optio doloremque!</p>
+						</div>
+						<div class="task__buttons">
+							<button class="task__button">Удалить</button>
+						</div>
+					</div>
+				</div>
 		
 		
 			<!-- Modal 1 -->
@@ -73,5 +109,17 @@
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script>
+var checkbox = document.getElementById("switch");
+
+checkbox.addEventListener('change', function() {
+console.log(this.checked)
+if(this.checked) {
+document.getElementById("theme").setAttribute("href", "css/dark.css");
+} else {
+document.getElementById("theme").setAttribute("href", "css/main.css");
+}
+});
+		</script>
 	</body>
 </html>
