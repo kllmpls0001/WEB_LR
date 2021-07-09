@@ -8,52 +8,70 @@
 		<title>to-do-List</title>
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	</head>
 	<body>
+		
 		<header class="header">
 			<div class="header__top">
 				<div class="logo">
 					<img src="ulitka.jpg" srcset="ulitka.jpg 10x" alt="Логотип">
 				</div>
-				<h2>Ulitushkin</h2>
-			<div>
-			<div class="header__bottom">
-				<div class="theme">
-					<label for="switch" class="theme__text">Темная тема</label>
-					<input type="checkbox" class="theme__checkbox" id="switch" name="theme">
+				<h2 class="text__header">Ulitushkin</h2>
+				<div>
+					<div class="header__bottom">
+						<div class="theme">
+							<label for="switch" class="theme__text">Темная тема</label>
+							<input type="checkbox" class="theme__checkbox" id="switch" name="theme">
+						</div>
+					</div>
 				</div>
 			</div>
 		</header>
+		<main>
+			<div class="col-lg-4 badge-info">
+				<p>Добавить задачу:</p>
+				<button type="button" class="btn btn-succecc" data-toggle="modal" data-target="#modal-1">
+					Новая задача
+				</button>
+			</div>
+			<div>
+				
+			</div>
 		
 		
-		
-		
-		
-		<!-- Modal 1 -->
-		<div class="modal" id="modal-1">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h4 class="modal-title">Новая задача</h4>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					<div class="modal-body">
-						<div class="modal-theme">
-							
+			<!-- Modal 1 -->
+			<div class="modal" id="modal-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">Новая задача</h4>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
 						</div>
-					</div>
-					<div class="modal-footer">
-						<button class="add_card" type="button" data-dismiss="modal">Добавить</button>
-						<button class="btn btn-danger" type="button" data-dismiss="modal">Закрыть</button>
+						<div class="modal-body">
+							<div class="modal-theme">
+								Текст задачи:
+								<input type="text" size="40"><br>
+								<input type="radio" name="rank" value="low"> low<br>
+								<input type="radio" name="rank" value="medium"> medium<br>
+								<input type="radio" name="rank" value="high"> high<br>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button class="add_card" type="button" data-dismiss="modal">Добавить</button>
+							<button class="btn btn-danger" type="button" data-dismiss="modal">Закрыть</button>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-			
+		</main>	
 		<div class="footer">	
-			
-		</div>	
+			<h4 class="text__end">Улитушкин Александр Александрович, группа 191-362, 09.07.2021.</h4>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	</body>
 </html>
