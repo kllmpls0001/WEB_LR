@@ -3,17 +3,14 @@ body {
 	font-family: 'Roboto', sans-serif!important;
 }
 .header {
-	margin-top: 1em;
+
 	border: 4px double black;
 	background: yellow;
-	font-size: 2em;
+	font-size: 1.5em;
 	text-align: center;
 }
 .text__header{
 	margin: 20px;
-}
-.text__theme{
-	
 }
 .header__top {
 	display: flex;
@@ -26,23 +23,26 @@ body {
 	margin: 20px;
 }
 .columns {
-	
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	padding: 0 10%;
 	flex-wrap: wrap;
+	flex-flow: row wrap;
+    align-items: center;
+    align-content: start;
 }
 .column {
 	border: 2px rgba(0, 128, 255, 0.795) solid;
 	border-radius: 5px;
 	box-shadow: 0 0 5px #9b9999;
 	word-wrap: break-word;
-	width: 30%;
-	min-width: 100px;
+	min-width: 200px;
 	padding: 1em;
 	cursor: pointer;
 	background-color: yellow;
+	
 }
+
 .column__header {
 	text-align: center;
 	color: #9b9999;
@@ -89,6 +89,13 @@ body {
 .modal-theme{
 	color: black;
 }
+.modal-header{
+	color: black;
+}
+.btn btn-add{
+	color: white;
+	margin: 20px;
+}
 .footer{
     outline: 2px solid #000;
 	background: yellow;
@@ -96,4 +103,51 @@ body {
 .text__end{
 	display: flex;
 	justify-content: space-between;
+	text-align: center;
+}
+.shake {
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+}
+
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+.text__theme{
+	
+}
+.m-h-100 {
+	min-height: 100vh;
+}
+
+.w3 {
+    width: 420px;
+}
+
+.w2 {
+    width: 250px;
+}
+
+.w1 {
+    width: 150px;
 }
